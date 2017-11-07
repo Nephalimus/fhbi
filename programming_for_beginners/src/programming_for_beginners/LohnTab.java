@@ -15,7 +15,7 @@ public class LohnTab {
 			
 			System.out.println();
 			//System.out.printf("Brutto    SozAbg   Steuer    Netto");
-			System.out.printf("%9s %8s %9s %8s\n", "Brutto", "SozAbg", "Steuer", "Netto");
+			System.out.printf("%-9s %-8s %-9s %-8s\n", "Brutto", "SozAbg", "Steuer", "Netto");
 			System.out.println();
 			System.out.printf("%9s %8s %9s %8s\n", "---------", "--------", "---------", "--------");
 			
@@ -24,7 +24,7 @@ public class LohnTab {
 				steuer = brutto*38.0/100.0;
 				//netto = Math.round(100.0 * (brutto - sozial - steuer)) / 100.0;
 				netto = brutto - sozial - steuer;
-				System.out.printf("%9d %8d %9d %8d\n", (int)brutto, (int)sozial, (int)steuer, (int)netto);
+				System.out.printf("%-9d %-8d %-9d %8d\n", (int)brutto, (int)sozial, (int)steuer, (int)netto);
 				
 			}
 		}
