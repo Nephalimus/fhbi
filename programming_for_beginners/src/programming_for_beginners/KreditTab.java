@@ -1,31 +1,42 @@
 package programming_for_beginners;
 
+import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
 
 public class KreditTab {
 
 		public static void main(String[] args) {
 			// TODO Auto-generated method stub
-			StdOut.println("Dieses Programm berechnet die Sozialabgaben, Steuern und das Netto fuer einen definierten Bruttobetragsbereich.");
+			StdOut.println("Dieses Programm berechnet die Ratenzahlung eines Kredits (extended Version).");
 				
-			double steuer;
-			double sozial;
-			double brutto;
-			double netto;
+			StdOut.print("Bitte geben Sie die Kreditsumme (1000) ein: ");
+			double summe = StdIn.readDouble();
+			StdOut.print("Bitte geben Sie die gewuenschte Rate (100) ein: ");
+			double rate = StdIn.readDouble();
+			StdOut.print("Bitte geben Sie den Zinssatz / Monat (1) ein: ");
+			double zins = StdIn.readDouble();
 			
 			System.out.println();
-			//System.out.printf("Brutto    SozAbg   Steuer    Netto");
-			System.out.printf("%9s %8s %9s %8s\n", "Brutto", "SozAbg", "Steuer", "Netto");
-			System.out.println();
-			System.out.printf("%9s %8s %9s %8s\n", "---------", "--------", "---------", "--------");
-			
-			for(brutto=1000;brutto<=2000;brutto+=100){
-				sozial = brutto*11.0/100.0;
-				steuer = brutto*38.0/100.0;
-				//netto = Math.round(100.0 * (brutto - sozial - steuer)) / 100.0;
-				netto = brutto - sozial - steuer;
-				System.out.printf("%9d %8d %9d %8d\n", (int)brutto, (int)sozial, (int)steuer, (int)netto);
-				
+			System.out.printf("%15s%15s%-20s\n", "", "", "Restschuld Anfang");
+			System.out.printf("%15s%15s%-20s\n", "Monat     ", "Rate     ", "des Monats nach");
+			System.out.printf("%15s%15s%-20s\n", "", "", "Zahlung der Rate");
+			System.out.printf("%15s%15s%-20s\n", "---------------", "---------------", "--------------------");
+						
+			int monat=1;
+			System.out.printf("%9d    %13.2f  %15.2f\n", monat, 0.00, summe);	//Erste Zeile
+			while(summe>rate){
+				monat++;
+				summe+=(summe/100.00*zins);
+				summe-=rate;
+				System.out.printf("%9d    %13.2f  %15.2f\n", monat, rate, summe);	
+				if(summe<rate) {
+					//für letzte Aufzinsung
+					summe+=(summe/100.00*zins);
+					rate=summe;
+					monat++;
+				}
 			}
+			System.out.printf("%9d    %13.2f  %15.2f\n", monat, rate, 0.00);	//Letzte Zeile
+
 		}
 }
