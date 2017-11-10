@@ -11,7 +11,7 @@ public class Zahlen100 {
 			if(i==21 || i==41 || i==61 || i==81) System.out.println();
 			System.out.printf("%2d ",sum);
 			sum += 37;
-			if(sum>=100)sum=sum-100;
+			if(sum>=100)sum-=100;
 		}
 	}
 
