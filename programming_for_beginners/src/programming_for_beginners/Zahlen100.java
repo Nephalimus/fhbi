@@ -14,5 +14,4 @@ public class Zahlen100 {
 			if(sum>=100)sum-=100;
 		}
 	}
-
 }
