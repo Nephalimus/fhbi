@@ -9,7 +9,7 @@ public class HelloWorld {
 		//Ausgabe
 				System.out.println("Hello world!");
 				/*
-				 * 
+				 *  
 				 */
 				StdOut.println("Hello");
 	}
