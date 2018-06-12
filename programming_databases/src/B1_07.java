@@ -13,7 +13,7 @@ public class B1_07 {
 			rs.next();
 			System.out.println("Name: "+ rs.getString("name"));
 			System.out.println("Anschrift: "+ rs.getString("str") + " "	+ rs.getInt("plz") + " "+ rs.getString("ort"));
-			rs.close();
+			rs.close(); 
 			stmt.close();
 			con.close();
 		} catch(SQLException e) {

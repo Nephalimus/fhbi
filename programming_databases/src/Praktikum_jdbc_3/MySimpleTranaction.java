@@ -47,7 +47,7 @@ public class MySimpleTranaction {
 	public static void main(String[] args) {
 		// Nutzerdaten Datenbankuser
 		String user = "dvi693";
-		String password = "fh1880";
+		String password = "fh1880"; 
 
 		// SQL-Anweisungen
 		String newKunde = "insert into ku values(6,'Mustermann','Im Weiher 2','14556','Musterhausen')";

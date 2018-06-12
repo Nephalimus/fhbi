@@ -49,7 +49,11 @@ public class MySimpleFirstQuery {
 				rs.next();
 				
 				do	{
-					System.out.println(rs.getString("name")+" "+rs.getString("str")+" "+rs.getString("plz")+" "+rs.getString("ort"));	
+					//System.out.println(rs.getString("name")+" "+rs.getString("str")+" "+rs.getString("plz")+" "+rs.getString("ort"));
+					
+					//Zusatzaufgabe
+					System.out.println("Name: " +rs.getString("name")+"    Anzahl: "+rs.getString(2));
+					
 					} while(rs.next());
 				
 			} catch (SQLException e) {
@@ -70,7 +74,10 @@ public class MySimpleFirstQuery {
 		String password = "fh1880";
 
 		// SQL-Query
-		String query = "select name, str, plz, ort from ku";
+		//String query = "select name, str, plz, ort from ku";
+		
+		//Zusatzaufgabe
+		String query = "select ku.name, count(KNZ) from ku, bg where ku.kunr = bg.kunr(+) group by ku.name order by ku.name ASC";
 
 		// Aufruf Konstruktor
 		new MySimpleFirstQuery(user, password, query);
