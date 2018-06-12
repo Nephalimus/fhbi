@@ -6,7 +6,7 @@ import edu.princeton.cs.introcs.StdOut;
 public class SumbisX {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		StdOut.println("Dieses Programm berechnet die Anzahl der Summanden (n) bis zum Erreichen oder Ueberschreiten eines Wertes x (1+2+3+...+n).");
 		StdOut.print("Bitte geben Sie den Wert fuer 'x' ein: ");
 		long x = StdIn.readLong();

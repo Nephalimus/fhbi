@@ -4,7 +4,7 @@ import edu.princeton.cs.introcs.StdOut;
 
 public class Schach02 {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		StdOut.println("Dieses Programm gibt ein Schachbrettmuster aus.");
 		System.out.println();
 		

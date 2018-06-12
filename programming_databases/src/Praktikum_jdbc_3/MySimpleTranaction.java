@@ -6,8 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import Praktikum_jdbc_2.MySimpleFirstDML;
-
 public class MySimpleTranaction {
 
 	// Instanzvariablen
@@ -56,7 +54,7 @@ public class MySimpleTranaction {
 			
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			System.out.println("Fehler: " + e.getMessage());
 			
 		} finally {
@@ -68,7 +66,7 @@ public class MySimpleTranaction {
 				if(con!= null)
 					con.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				System.out.println("Datenbankverbindung konnte nicht beendet werde. Genereller Fehler! " + e.getMessage());
 			}
 			

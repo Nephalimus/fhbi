@@ -6,7 +6,7 @@ import edu.princeton.cs.introcs.StdOut;
 public class SumQuad {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		StdOut.println("Dieses Programm berechnet die Summe der ersten n Quadratzahlen, wobei n definiert wird (1^2+2^2+3^2+...+n^2).");
 		StdOut.print("Bitte geben Sie den Wert fuer 'n' ein: ");
 		int anzahl = StdIn.readInt();

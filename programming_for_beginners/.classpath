@@ -4,7 +4,5 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/Oliver Trappe/eclipse/stdlib.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Oliver Trappe/eclipse/stdlib-package.jar"/>
-	<classpathentry kind="lib" path="P:/workspace/StdLib/stdlib.jar"/>
-	<classpathentry kind="lib" path="P:/workspace/StdLib/stdlib-package.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

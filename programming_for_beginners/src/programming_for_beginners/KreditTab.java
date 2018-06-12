@@ -6,7 +6,7 @@ import edu.princeton.cs.introcs.StdOut;
 public class KreditTab {
 
 		public static void main(String[] args) {
-			// TODO Auto-generated method stub
+			
 			StdOut.println("Dieses Programm berechnet die Ratenzahlung eines Kredits (extended Version).");
 				
 			StdOut.print("Bitte geben Sie die Kreditsumme (1000) ein: ");

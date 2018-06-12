@@ -53,7 +53,7 @@ public class MySimpleFirstQuery {
 					} while(rs.next());
 				
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				System.out.println("Fehler: " + e.getMessage());
 				
 			} finally {
@@ -65,7 +65,7 @@ public class MySimpleFirstQuery {
 					if(con!= null)
 						con.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
+					
 					System.out.println("Datenbankverbindung konnte nicht beendet werde. Genereller Fehler! " + e.getMessage());
 				}
 				

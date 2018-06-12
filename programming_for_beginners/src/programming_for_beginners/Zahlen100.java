@@ -4,7 +4,7 @@ import edu.princeton.cs.introcs.StdOut;
 
 public class Zahlen100 {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		StdOut.println("Dieses Programm gibt alle Zahlen von 1 - 100 aus - im 37/1000 Teilerfremd-Rhythmus.");
 		int sum = 1;			
 		for(int i=1;i<101;i++){

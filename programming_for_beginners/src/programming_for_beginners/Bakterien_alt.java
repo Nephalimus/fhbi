@@ -6,7 +6,7 @@ import edu.princeton.cs.introcs.StdOut;
 public class Bakterien_alt {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		StdOut.println("Dieses Programm berechnet das Wachstum einer Bakterienkolonie.");
 		StdOut.print("Bitte den Wachstumsmultiplikator eingeben: ");
 		double wachstum = StdIn.readDouble();

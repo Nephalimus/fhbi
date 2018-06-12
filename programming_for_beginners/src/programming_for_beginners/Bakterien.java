@@ -5,7 +5,7 @@ import edu.princeton.cs.introcs.StdOut;
 public class Bakterien {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		StdOut.println("Dieses Programm berechnet das Wachstum einer Bakterienkolonie (*4/h).");
 			
 		long sum = 3;

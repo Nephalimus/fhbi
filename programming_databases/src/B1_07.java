@@ -4,7 +4,7 @@ import java.sql.*;
 public class B1_07 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		try{
 			Connection con = DriverManager.getConnection(
 			"jdbc:oracle:thin:@aix1.fh-bielefeld.de:1521:d2","dvi693","fh1880");

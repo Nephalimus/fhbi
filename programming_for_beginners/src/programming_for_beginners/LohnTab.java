@@ -5,7 +5,7 @@ import edu.princeton.cs.introcs.StdOut;
 public class LohnTab {
 
 		public static void main(String[] args) {
-			// TODO Auto-generated method stub
+			
 			StdOut.println("Dieses Programm berechnet die Sozialabgaben, Steuern und das Netto fuer einen definierten Bruttobetragsbereich.");
 				
 			double steuer;

@@ -5,7 +5,7 @@ import edu.princeton.cs.introcs.StdOut;
 public class FiboZ01 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		StdOut.println("Dieses Programm gibt die ersten 20 Elemente der Fibonacci Folge aus.");
 		int a = 1;
 		int b = 1;

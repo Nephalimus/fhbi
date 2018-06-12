@@ -49,7 +49,7 @@ public class MySimpleFirstDML {
 			System.out.println("Anzahl bearbeiteter Datensätze: " + rows);
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			System.out.println("Fehler: " + e.getMessage());
 			
 		} finally {
@@ -61,7 +61,6 @@ public class MySimpleFirstDML {
 				if(con!= null)
 					con.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				System.out.println("Datenbankverbindung konnte nicht beendet werde. Genereller Fehler! " + e.getMessage());
 			}
 			
