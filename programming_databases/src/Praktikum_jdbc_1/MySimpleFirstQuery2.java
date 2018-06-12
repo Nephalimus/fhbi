@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class MySimpleFirstQuery {
+public class MySimpleFirstQuery2 {
 
 	// Instanzvariablen
 	private Connection con = null;
@@ -41,16 +41,18 @@ public class MySimpleFirstQuery {
 	 * @param query
 	 * @throws SQLException 
 	 */
-	public MySimpleFirstQuery(String user, String password, String query) throws SQLException {
+	public MySimpleFirstQuery2(String user, String password, String query) throws SQLException {
 			try {
 				con = DriverManager.getConnection(url, user,password);
 				stmt = con.createStatement();
 				rs = stmt.executeQuery(query);
-				rs.next();
 				
-				do	{
-					System.out.println(rs.getString("name")+" "+rs.getString("str")+" "+rs.getString("plz")+" "+rs.getString("ort"));
-					} while(rs.next());
+				
+				while(rs.next()){
+					//Zusatzaufgabe
+					System.out.println("Name: " +rs.getString("name")+"    Anzahl: "+rs.getString(2));
+					
+					};
 				
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
@@ -77,11 +79,11 @@ public class MySimpleFirstQuery {
 		String user = "dvi693";
 		String password = "fh1880";
 
-		// SQL-Query
-		String query = "select name, str, plz, ort from ku";
+		//Zusatzaufgabe
+		String query = "select ku.name, count(KNZ) from ku, bg where ku.kunr = bg.kunr(+) group by ku.name order by ku.name ASC";
 
 		// Aufruf Konstruktor
-		new MySimpleFirstQuery(user, password, query);
+		new MySimpleFirstQuery2(user, password, query);
 
 	}
 }

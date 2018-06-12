@@ -44,17 +44,26 @@ public class MySimpleFirstDML {
 			con = DriverManager.getConnection(url, user,password);
 			stmt = con.createStatement();
 			rs = stmt.executeQuery(dml);
-			rs.next();
+			Integer rows = stmt.getMaxRows();  
 
+			System.out.println("Anzahl bearbeiteter Datensätze: " + rows);
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println("Fehler: " + e.getMessage());
 			
 		} finally {
-			rs.close();
-			stmt.close();
-			con.close();
+			try {
+				if(rs != null)
+					rs.close();
+				if(stmt != null)
+					stmt.close();
+				if(con!= null)
+					con.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				System.out.println("Datenbankverbindung konnte nicht beendet werde. Genereller Fehler! " + e.getMessage());
+			}
 			
 		}
 	}

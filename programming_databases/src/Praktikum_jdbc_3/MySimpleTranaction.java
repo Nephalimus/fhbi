@@ -2,8 +2,11 @@ package Praktikum_jdbc_3;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import Praktikum_jdbc_2.MySimpleFirstDML;
 
 public class MySimpleTranaction {
 
@@ -39,8 +42,37 @@ public class MySimpleTranaction {
 	 * @param newKunde
 	 * @param newAusleihe
 	 */
+	private ResultSet rs = null;
+	
 	public MySimpleTranaction(String user, String password, String newKunde, String newAusleihe) {
+		try {
+			con = DriverManager.getConnection(url, user,password);
+			stmt = con.createStatement();
+			rs = stmt.executeQuery("");
+			rs.next();
 
+			
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Fehler: " + e.getMessage());
+			
+		} finally {
+			try {
+				if(rs != null)
+					rs.close();
+				if(stmt != null)
+					stmt.close();
+				if(con!= null)
+					con.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				System.out.println("Datenbankverbindung konnte nicht beendet werde. Genereller Fehler! " + e.getMessage());
+			}
+			
+		}
 		
 	}
 
@@ -49,14 +81,20 @@ public class MySimpleTranaction {
 		String user = "dvi693";
 		String password = "fh1880"; 
 
-		// SQL-Anweisungen
 		String newKunde = "insert into ku values(6,'Mustermann','Im Weiher 2','14556','Musterhausen')";
 		String newAusleihe = "insert into bg values(32,6,'18.06.2018',7)";
-
-		// String failAusleihe ="insert into bg values(88,6,'18.06.2018',7)";
-
-		new MySimpleTranaction(user, password, newKunde, newAusleihe);
-		// new MySimpleTranaction(user,password,newKunde,failAusleihe);
+		String failAusleihe ="insert into bg values(88,6,'18.06.2018',7)";
+				
+		for(int i=1; i<3; i++){
+			if(i==1){
+				System.out.println("Transaktion");
+				new MySimpleTranaction(user, password, newKunde, newAusleihe);
+			}else{
+				System.out.println("FAIL");
+				new MySimpleTranaction(user,password,newKunde,failAusleihe);
+			}
+		}
+		
 	}
 
 }
