@@ -43,7 +43,7 @@ public class Student implements Comparable<Student> {
 			System.out.println("Student kommte nicht angelegt werden!\n"
 					+ "Input: " + zeile + "\nFehlermeldung: "
 					+ e.getMessage());
-		}
+		} 
 	}
 
 	public String getName() {
