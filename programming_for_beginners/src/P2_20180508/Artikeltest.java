@@ -171,7 +171,7 @@ public class Artikeltest {
 //		Iterator<Artikel> it = aliste.iterator();
 //		while(it.hasNext()){
 //			System.out.println(it.next());
-//		}
+		}
 	}
 
 }

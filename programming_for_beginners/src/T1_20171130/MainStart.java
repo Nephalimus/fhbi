@@ -79,7 +79,7 @@ public class MainStart {
 				Bestellung bestellung = new Bestellung(artliste[14], 5);
 				ww.addBestellung(bestellung);
 				System.out.println();
-				System.out.println("Bestellung - " + ww.getListe()[2] + " wurde hinzugefügt.");
+				System.out.println("Bestellung - " + ww.getListe()[8] + " wurde hinzugefügt.");
 				
 				// Ausgabe des aktuellen Warenkorbes von Walther 
 				ww.druckeListe();
