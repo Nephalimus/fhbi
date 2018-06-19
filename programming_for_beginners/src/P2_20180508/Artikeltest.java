@@ -144,8 +144,7 @@ public class Artikeltest {
 		
 
 
-
-	}
+		}
 	
 	/**
 	 * Schreiben Sie eine Methode, bei der die Liste ausgegeben wird.
@@ -153,17 +152,17 @@ public class Artikeltest {
 	 * die Methode alle Listen des Collection-Framework (ArrayList, 
 	 * LinkedList, etc.) ausgeben kann.
 	 */
-	public static void ausgabe(... aliste){
+//	public static void ausgabe(... aliste){
 		/*
 		 *  Ausgabe einer Leerzeile
 		 */
-		System.out.println();
+//		System.out.println();
 		
 		/*
 		 *  Ausgabe der übergebenen Liste mittels einer for-each-Schleife
 		 */
-		for(Artikel a: aliste)
-			System.out.println(a);
+//		for(Artikel a: aliste)
+//			System.out.println(a);
 		
 		/* 
 		 * Ausgabe der übergebenen Liste mittels eines Iterators
@@ -171,7 +170,7 @@ public class Artikeltest {
 //		Iterator<Artikel> it = aliste.iterator();
 //		while(it.hasNext()){
 //			System.out.println(it.next());
-		}
-	}
+//		}
+//	}
 
 }
