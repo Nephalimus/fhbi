@@ -20,6 +20,7 @@ public class Student implements Comparable<Student> {
 		this.vorname = StdIn.readString();
 		System.out.print("Bitte Jahrgang eingeben: ");
 		this.jahrgang = StdIn.readInt();
+		
 	}
 
 	public Student(String name, String vorname, int jahrgang, int matrikelnummer) {
