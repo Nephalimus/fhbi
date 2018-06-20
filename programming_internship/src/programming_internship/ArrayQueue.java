@@ -11,7 +11,7 @@ public class ArrayQueue<T> implements Queue<T> {
 	private int last = capacity-1;
 	private int size = 0;
 	
-	@SuppressWarnings("unchecked")
+	//@SuppressWarnings("unchecked")
 	public ArrayQueue(int size) 
 	{
 		this.capacity = size;
