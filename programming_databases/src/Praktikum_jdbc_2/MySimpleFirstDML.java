@@ -43,9 +43,8 @@ public class MySimpleFirstDML {
 		try {
 			con = DriverManager.getConnection(url, user,password);
 			stmt = con.createStatement();
-			rs = stmt.executeQuery(dml);
-			Integer rows = stmt.getMaxRows();  
-
+			int rows = stmt.executeUpdate(dml);
+			 
 			System.out.println("Anzahl bearbeiteter Datensätze: " + rows);
 			
 		} catch (SQLException e) {
@@ -76,7 +75,7 @@ public class MySimpleFirstDML {
 		String dml = "insert into ku values(6,'Mustermann','Im Weiher 2','14556','Musterhausen')";
 		String delete = "delete from ku where kunr = 6";
 
-		// Konstruktoraufruf
+		
 		
 		for(int i=1; i<3; i++){
 			if(i==1){

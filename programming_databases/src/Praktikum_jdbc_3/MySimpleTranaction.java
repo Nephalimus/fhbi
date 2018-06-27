@@ -45,13 +45,16 @@ public class MySimpleTranaction {
 	public MySimpleTranaction(String user, String password, String newKunde, String newAusleihe) {
 		try {
 			con = DriverManager.getConnection(url, user,password);
+			
+			if(con.getAutoCommit()){
+				con.setAutoCommit(false);
+			}
+						
 			stmt = con.createStatement();
-			rs = stmt.executeQuery("");
-			rs.next();
-
-			
-			
-			
+			int rows = stmt.executeUpdate(newKunde);
+			rows = stmt.executeUpdate(newAusleihe);
+			System.out.println("Ausleihe wurde erfasst!" + rows);
+			con.commit();
 			
 		} catch (SQLException e) {
 			
@@ -59,11 +62,13 @@ public class MySimpleTranaction {
 			
 		} finally {
 			try {
-				if(rs != null)
+				if(rs != null) 
 					rs.close();
 				if(stmt != null)
 					stmt.close();
 				if(con!= null)
+					con.rollback();
+					con.setAutoCommit(true);
 					con.close();
 			} catch (SQLException e) {
 				
@@ -80,6 +85,7 @@ public class MySimpleTranaction {
 		String password = "fh1880"; 
 
 		String newKunde = "insert into ku values(6,'Mustermann','Im Weiher 2','14556','Musterhausen')";
+		String newKunde2 = "insert into ku values(7,'Mustermann','Im Weiher 2','14556','Musterhausen')";
 		String newAusleihe = "insert into bg values(32,6,'18.06.2018',7)";
 		String failAusleihe ="insert into bg values(88,6,'18.06.2018',7)";
 				
@@ -89,7 +95,7 @@ public class MySimpleTranaction {
 				new MySimpleTranaction(user, password, newKunde, newAusleihe);
 			}else{
 				System.out.println("FAIL");
-				new MySimpleTranaction(user,password,newKunde,failAusleihe);
+				new MySimpleTranaction(user,password,newKunde2,failAusleihe);
 			}
 		}
 		
