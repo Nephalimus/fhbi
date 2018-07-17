@@ -28,6 +28,8 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
+import src.Arbeiten_mit_JTable.ColoredTableCellRenderer;
+
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package Arbeiten_mit_JTable;
+package src.Arbeiten_mit_JTable;
 /* ColoredTableCellRenderer.java */
 
 import java.awt.*;
