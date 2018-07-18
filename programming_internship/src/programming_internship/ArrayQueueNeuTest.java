@@ -8,41 +8,86 @@ public class ArrayQueueNeuTest {
 		Student third = new Student("Schmidt","Sebastian",1982,4712);
 		
 		ArrayQueueNeu<Student> werteot = new ArrayQueueNeu<Student>(10);
-		werteot.enqueue(first);
-		werteot.enqueue(second);
-		werteot.enqueue(third);
 		
+		try {
+			werteot.enqueueData(first);
+			werteot.enqueueData(second);
+			werteot.enqueueData(third);
+		} catch (MyQueueException ex) {
+			System.out.println(ex);
+		}
 		System.out.println(werteot);
 		
-		werteot.dequeue();
-		werteot.dequeue();
-		
+		try {
+			werteot.dequeueData();
+			werteot.dequeueData();
+			werteot.dequeueData();
+//			werteot.dequeue();
+		} catch (MyQueueException ex) {
+			System.out.println(ex);
+		}
 		System.out.println(werteot);
 		
-		werteot.enqueue(first);
-		werteot.enqueue(first);
-		werteot.enqueue(first);
-		werteot.enqueue(first);
-		werteot.enqueue(first);
-		werteot.enqueue(first);
-		
+		try {
+			werteot.enqueueData(first);
+			werteot.enqueueData(first);
+			werteot.enqueueData(first);
+			werteot.enqueueData(first);
+			werteot.enqueueData(first);
+			werteot.enqueueData(first);
+		} catch (MyQueueException ex) {
+			System.out.println(ex);
+		}
 		System.out.println(werteot);
 		
-		werteot.dequeue();
-		werteot.dequeue();
-		werteot.dequeue();
-		werteot.dequeue();
-		werteot.dequeue();
-		werteot.dequeue();
-		
-		werteot.enqueue(first);
+		try {
+			werteot.dequeueData();
+			werteot.dequeueData();
+			werteot.dequeueData();
+			werteot.dequeueData();
+			werteot.dequeueData();
+			werteot.dequeueData();
+			werteot.enqueueData(first);
+		} catch (MyQueueException ex) {
+			System.out.println(ex);
+		}
+		System.out.println(werteot);
+			
+		try {
+			werteot.enqueueData(first);
+			werteot.enqueueData(first);
+			werteot.enqueueData(first);
+			werteot.dequeueData();
+			werteot.dequeueData();
+		} catch (MyQueueException ex) {
+			System.out.println(ex);
+		}
+		System.out.println(werteot);
+			
+		try {
+			werteot.dequeueData();
+			werteot.dequeueData();
+		} catch (MyQueueException ex) {
+			System.out.println(ex);
+		}
 		System.out.println(werteot);
 		
-		werteot.enqueue(first);
-		werteot.dequeue();
-		System.out.println(werteot);
-		
-		werteot.dequeue();
+		try {
+			werteot.reset();
+			werteot.enqueueData(first);
+			werteot.enqueueData(second);
+			werteot.enqueueData(third);
+			werteot.enqueueData(first);
+			werteot.enqueueData(second);
+			werteot.enqueueData(third);
+			werteot.enqueueData(first);
+			werteot.enqueueData(second);
+			werteot.enqueueData(third);
+			werteot.enqueueData(first);
+			werteot.enqueueData(second);
+		} catch (MyQueueException ex) {
+			System.out.println(ex);
+		}
 		System.out.println(werteot);
 	}
 

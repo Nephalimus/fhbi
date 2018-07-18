@@ -4,6 +4,8 @@ import java.awt.FlowLayout;
 import java.awt.GridLayout;
 
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 
 public class Fenster3 extends JFrame{
@@ -21,7 +23,6 @@ public class Fenster3 extends JFrame{
 		super.add(new JButton("4"));
 		super.add(new JButton("5"));
 		super.add(new JButton("6"));
-		
 		super.setVisible(true);
 	}
 

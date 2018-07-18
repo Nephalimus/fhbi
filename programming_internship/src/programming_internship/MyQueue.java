@@ -2,8 +2,8 @@ package programming_internship;
 
 public interface MyQueue<T> {
 
-	public void enqueue(T t);
+	public void enqueueData(T t) throws MyQueueFullException;
 	
-	public T dequeue();
+	public T dequeueData() throws MyQueueEndeException, MyQueueAbgezogenException;
 	
 }

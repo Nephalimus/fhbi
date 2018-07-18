@@ -29,7 +29,8 @@ public class BMI extends JFrame{
 		super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		super.setLocation(100, 100);
 		super.setTitle("BMI");
-		
+
+		/*
 		pWest.add(this.lblGewicht);
 		pWest.add(this.lblGroesse);
 		pWest.add(this.lblBmi);
@@ -53,6 +54,7 @@ public class BMI extends JFrame{
 		super.add(pSouth,BorderLayout.SOUTH);
 		
 		super.pack();
+		*/
 		
 		super.setVisible(true);
 	}
