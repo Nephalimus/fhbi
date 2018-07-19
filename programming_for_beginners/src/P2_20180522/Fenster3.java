@@ -16,7 +16,7 @@ public class Fenster3 extends JFrame{
 		super.setLocation(500,200);
 		super.setSize(500,200);
 		
-		super.setLayout(new FlowLayout(FlowLayout.RIGHT));
+		super.setLayout(new FlowLayout(FlowLayout.LEFT));
 		super.add(new JButton("1"));
 		super.add(new JButton("2"));
 		super.add(new JButton("3"));

@@ -13,7 +13,7 @@ public class Fenster2 extends JFrame{
 		super.setLocation(500,200);
 		super.setSize(500,200);
 		
-		super.setLayout(new GridLayout(3,2,15,5));
+		super.setLayout(new GridLayout(4,6,130,5));
 		super.add(new JButton("1"));
 		super.add(new JButton("2"));
 		super.add(new JButton("3"));
