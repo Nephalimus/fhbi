@@ -9,9 +9,9 @@ import java.util.ArrayList;
 public class Warenkorb {
 
 	private ArrayList<Artikel> artikelliste = new ArrayList<Artikel>();
-	private Kunde kunde;
+	private IKunde kunde;
 	
-	public Warenkorb(Kunde k){
+	public Warenkorb(IKunde k){
 		kunde = k;
 	}
 	

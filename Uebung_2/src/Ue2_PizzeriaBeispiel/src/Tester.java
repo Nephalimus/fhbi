@@ -9,6 +9,7 @@ public class Tester {
 		
 		Pizzeria meinePizzeria = new Pizzeria();
 		Pizza neuePizza =  meinePizzeria.erstellePizza("Berlin", "Salami");
+		Pizza neuePizza2 =  meinePizzeria.erstellePizza("Koeln", "Salami");
 		
 	}
 

@@ -38,6 +38,20 @@ public class Pizzeria {
 			{
 				pizza = new MuenchenerThunfischPizza();
 			}
+		} else if (art.equals("Koeln"))
+		{
+			if (typ.equals("Salami"))
+			{
+				pizza = new KoelnSalamiPizza();
+			}
+			else if (typ.equals("Schinken"))
+			{
+				pizza = new KoelnSchinkenPizza();
+			}
+			else if (typ.equals("Thunfisch"))
+			{
+				pizza = new KoelnThunfischPizza();
+			}
 		} else {
 			System.out.println("Fehler: Ungültiger Pizzatyp");
 			return null;

@@ -10,9 +10,9 @@ public class Bestellung {
 	
 	private int bestellNr;
 	private ArrayList<Artikel> artikelpositionen = new ArrayList<Artikel>();
-	private Kunde kunde;
+	private IKunde kunde;
 	
-	public Bestellung(int n, Kunde k){
+	public Bestellung(int n, IKunde k){
 		this.bestellNr = n;
 		this.kunde = k;
 	}
@@ -32,6 +32,8 @@ public class Bestellung {
 			betrag = betrag + artikelpositionen.get(i).getPreis();
 		}
 		
+		betrag = betrag - (betrag/100*kunde.getRabatt());
+		
 		return betrag;
 	}
 	
@@ -39,7 +41,7 @@ public class Bestellung {
 		return artikelpositionen;
 	}
 	
-	public Kunde getKunde(){
+	public IKunde getKunde(){
 		return kunde;
 	}
 	

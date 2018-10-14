@@ -9,6 +9,7 @@ public class WetterStation {
 		Anzeige aktuelleAnzeige = factory.createAktuelleAnzeige(wetterDaten);
 		Anzeige statistikAnzeige = factory.createStatistikAnzeige(wetterDaten);
 		Anzeige vorhersageAnzeige = factory.createVorhersageAnzeige(wetterDaten);
+		Anzeige fahrenheitAnzeige = factory.createFahrenheitAnzeige(wetterDaten);
 		
 		
 		wetterDaten.setMesswerte(30, 65, 30.4f);

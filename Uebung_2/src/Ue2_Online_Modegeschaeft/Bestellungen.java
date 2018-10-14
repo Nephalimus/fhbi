@@ -23,7 +23,7 @@ public class Bestellungen {
 	* 
 	* @return Bestellungsnummer der Bestellung
 	**/
-	public int neueBestellung(ArrayList<Artikel> w, Kunde k) {
+	public int neueBestellung(ArrayList<Artikel> w, IKunde k) {
 		id++;
 		Bestellung neuB = new Bestellung(id, k);
 		
