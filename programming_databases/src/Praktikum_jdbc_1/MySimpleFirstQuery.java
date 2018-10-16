@@ -16,7 +16,7 @@ public class MySimpleFirstQuery {
 	private String url = "jdbc:oracle:thin:@aix1.fh-bielefeld.de:1521:d2";
 
 	/**
-	 * Aufgabenstellung:
+	 * Aufgabenstellung:  
 	 * 
 	 * Ergänzen Sie den Konstruktor so, dass die als Parameter übergebene
 	 * SQL-Query ausgeführt werden kann. Das Ergebnis der SQL-Query ist im
