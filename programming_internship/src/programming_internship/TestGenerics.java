@@ -23,7 +23,7 @@ public class TestGenerics {
 			return;
 		
 		Collections.sort(studenten);
-		Collections.sort(studenten, new SortJahrgang());
+		//Collections.sort(studenten, new SortJahrgang());
 		
 		for(int i=0;i<studenten.size();i++) {
 			Student s1 = studenten.get(i);

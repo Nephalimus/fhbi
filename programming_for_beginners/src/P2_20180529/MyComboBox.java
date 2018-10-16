@@ -27,7 +27,7 @@ public class MyComboBox extends JFrame{
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				System.out.println(cb.getSelectedIndex() + ":  " + (String)cb.getSelectedItem());
+				System.out.println(cb.getSelectedIndex() + ":  " + cb.getSelectedItem());
 			}
 			
 		});
