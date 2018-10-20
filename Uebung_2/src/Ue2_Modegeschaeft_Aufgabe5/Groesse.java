@@ -5,7 +5,7 @@ package Ue2_Modegeschaeft_Aufgabe5;
  * Text Groesse
  * @author Oliver
  * @version 1.0
- * @updated 14-Okt-2018 20:39:02
+ * @updated 18-Okt-2018 11:45:14
  */
 public class Groesse {
 
