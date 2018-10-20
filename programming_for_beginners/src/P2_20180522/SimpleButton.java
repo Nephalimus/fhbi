@@ -6,6 +6,7 @@ import java.awt.Dimension;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
+@SuppressWarnings("all")
 public class SimpleButton extends JFrame{
 	
 	private JButton btn = new JButton("Click me!");

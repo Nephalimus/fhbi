@@ -2,6 +2,8 @@ package programming_internship;
 
 import java.util.LinkedList;
 
+@SuppressWarnings("all")
+
 public class TestListen {
 
 	public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package Ue2_Modegeschaeft_Aufgabe5;
 
-
+@SuppressWarnings("all")
 /**
  * Text Groesse
  * @author Oliver

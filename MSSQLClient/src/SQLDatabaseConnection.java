@@ -7,6 +7,8 @@ import java.util.logging.Logger;
 import lotus.domino.DateTime;
 import lotus.domino.NotesException;
 
+@SuppressWarnings("all")
+
 public class SQLDatabaseConnection {  
 
 	private static Logger log = Logger.getLogger(SQLDatabaseConnection.class.getName());

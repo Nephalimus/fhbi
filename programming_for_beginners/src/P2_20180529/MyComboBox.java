@@ -9,6 +9,7 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+@SuppressWarnings("all")
 public class MyComboBox extends JFrame{
 	
 	private String[] liste = {"Auswahl 1", "Auswahl 2", "Auswahl 3"};

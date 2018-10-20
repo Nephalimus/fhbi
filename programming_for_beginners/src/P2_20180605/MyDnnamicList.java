@@ -20,6 +20,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.ListSelectionModel;
 
+@SuppressWarnings("all")
 public class MyDnnamicList extends JFrame implements ActionListener, MouseListener{
 
 	private DefaultListModel<String> dm = new DefaultListModel<String>();

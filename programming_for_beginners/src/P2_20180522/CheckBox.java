@@ -6,6 +6,7 @@ import java.awt.Dimension;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 
+@SuppressWarnings("all")
 public class CheckBox extends JFrame{
 	
 	private JCheckBox cb = new JCheckBox("Do you like things to click on?");

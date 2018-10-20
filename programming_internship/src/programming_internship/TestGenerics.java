@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
+@SuppressWarnings("all")
+
 public class TestGenerics {
 
 	public static void main(String[] args) {

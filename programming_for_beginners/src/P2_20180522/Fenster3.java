@@ -8,6 +8,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 
+@SuppressWarnings("all")
 public class Fenster3 extends JFrame{
 
 	public Fenster3() {

@@ -4,6 +4,8 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Queue;
 
+@SuppressWarnings("all")
+
 public class ArrayQueue<T> implements Queue<T> {
 	private int capacity = 0;
 	private T[] queue;

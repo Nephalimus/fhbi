@@ -5,6 +5,7 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
+@SuppressWarnings("all")
 public class Fenster2 extends JFrame{
 
 	public Fenster2() {

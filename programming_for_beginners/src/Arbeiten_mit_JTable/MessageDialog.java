@@ -15,7 +15,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 
-
+@SuppressWarnings("all")
 public class MessageDialog extends JDialog {
 
 	private Studentenverwaltung gui;

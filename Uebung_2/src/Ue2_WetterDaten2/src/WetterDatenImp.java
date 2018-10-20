@@ -2,6 +2,7 @@ package Ue2_WetterDaten2.src;
 
 import java.util.ArrayList;
 
+@SuppressWarnings("all")
 public class WetterDatenImp implements WetterDaten {
 
 	private ArrayList anzeigenListe = new ArrayList();

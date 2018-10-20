@@ -8,6 +8,7 @@ import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.table.*;
 
+@SuppressWarnings("all")
 public class ColoredTableCellRenderer implements TableCellRenderer {
 	private Color lightBlue = new Color(160, 160, 255);
 	private Color darkBlue = new Color(64, 64, 128);

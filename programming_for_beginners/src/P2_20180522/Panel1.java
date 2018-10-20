@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
+@SuppressWarnings("all")
 public class Panel1 extends JPanel{
 	
 	private JLabel lblInfo = new JLabel("Bitte geben Sie hier einen Text ein: ");

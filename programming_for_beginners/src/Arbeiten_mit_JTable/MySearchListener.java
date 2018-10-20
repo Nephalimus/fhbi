@@ -10,6 +10,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
+@SuppressWarnings("all")
 public class MySearchListener implements DocumentListener{
 	
 	private Studentenverwaltung gui;

@@ -5,6 +5,7 @@ import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+@SuppressWarnings("all")
 public class Panel2 extends JPanel{
 	
 	private JButton btnSpeichern = new JButton("Speichern");

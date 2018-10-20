@@ -11,6 +11,8 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
+@SuppressWarnings("all")
+
 public class Fenster2abc extends JFrame{
 	
 	public JTextField name = new JTextField("Name");

@@ -5,6 +5,7 @@ import java.util.List;
 
 import Ue2_Online_Modegeschaeft.Artikel;
 
+@SuppressWarnings("all")
 /**
  * Text MItarbeiter
  * @author Oliver

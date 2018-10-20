@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
 
+@SuppressWarnings("all")
 public class AllPanels extends JFrame{
 
 	public AllPanels() {

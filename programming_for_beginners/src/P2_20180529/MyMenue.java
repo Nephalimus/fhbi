@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import javax.swing.*;
 
+@SuppressWarnings("all")
 public class MyMenue extends JFrame {
 	/* Vereinbaren der Steuerelemente als Klassensteuerlemente */
 	private JMenuItem open = new JMenuItem("öffnen", 'ö');

@@ -13,6 +13,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+@SuppressWarnings("all")
 public class MyGridBag extends JFrame {
 
 	private JLabel lblName = new JLabel("Name:");

@@ -2,6 +2,8 @@ package programming_internship;
 
 import edu.princeton.cs.introcs.StdIn;
 
+@SuppressWarnings("all")
+
 public class Student implements Comparable<Student> {
 //public class Student{
 	private String name;

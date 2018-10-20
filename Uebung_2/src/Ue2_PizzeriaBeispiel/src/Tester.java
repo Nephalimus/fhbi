@@ -1,5 +1,6 @@
 package Ue2_PizzeriaBeispiel.src;
 
+@SuppressWarnings("all")
 public class Tester {
 
 	/**

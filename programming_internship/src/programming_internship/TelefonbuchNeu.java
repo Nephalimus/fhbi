@@ -30,6 +30,8 @@ import javax.swing.SwingConstants;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
+@SuppressWarnings("all")
+
 public class TelefonbuchNeu extends JFrame {
 	
 	private ArrayList<TelefonbuchEintrag> eintraege = new ArrayList<TelefonbuchEintrag>();

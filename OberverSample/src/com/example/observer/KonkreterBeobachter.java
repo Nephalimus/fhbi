@@ -6,6 +6,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+@SuppressWarnings("all")
 public class KonkreterBeobachter implements Beobachter {
 	private JLabel tempLabel = new JLabel("Temperatur:");
 	private JLabel tempValue = new JLabel("UNDEF");

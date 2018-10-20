@@ -14,7 +14,7 @@ public class Log {
 	private boolean do_log_fehler = false;
 	private boolean do_log_debug = false;
 	private boolean can_log = false;
-	
+	 
 	private String log_datei = "";
 	
 	private Database db;

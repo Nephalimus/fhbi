@@ -5,6 +5,7 @@ import java.awt.BorderLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
+@SuppressWarnings("all")
 public class Fenster extends JFrame{
 
 	public Fenster() {

@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+@SuppressWarnings("all")
 public class BMI extends JFrame{
 	
 	private JLabel lblGewicht = new JLabel("Gewicht:  ");

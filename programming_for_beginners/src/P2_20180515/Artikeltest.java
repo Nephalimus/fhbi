@@ -11,6 +11,7 @@ import java.util.TreeMap;
 
 import edu.princeton.cs.introcs.StdIn;
 
+@SuppressWarnings("all")
 public class Artikeltest {
 
 	public static void main(String[] args) {

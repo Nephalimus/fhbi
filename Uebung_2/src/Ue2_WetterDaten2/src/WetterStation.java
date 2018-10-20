@@ -1,5 +1,6 @@
 package Ue2_WetterDaten2.src;
 
+@SuppressWarnings("all")
 public class WetterStation {
 	
 	public static void main(String[] args) {

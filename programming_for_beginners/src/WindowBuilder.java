@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 
+@SuppressWarnings("all")
 public class WindowBuilder extends JFrame{
 	private JTextField textField;
 	public WindowBuilder() {

@@ -7,6 +7,7 @@ import java.text.DecimalFormat;
 
 import javax.swing.*;
 
+@SuppressWarnings("all")
 
 public class BMI extends JFrame{
 	private static JFrame currentwindow;

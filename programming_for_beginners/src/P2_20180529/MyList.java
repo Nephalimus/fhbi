@@ -15,6 +15,7 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
+@SuppressWarnings("all")
 public class MyList extends JFrame{
 
 	private String[] liste = {"Auswahl 1", "Auswahl 2", "Auswahl 3"};

@@ -4,6 +4,7 @@ import java.util.LinkedList;
 
 import javax.swing.table.AbstractTableModel;
 
+@SuppressWarnings("all")
 public class StudentTableModel extends AbstractTableModel {
 
 	private LinkedList<Student> slist;

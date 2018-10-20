@@ -7,6 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
+@SuppressWarnings("all")
 public class LabelAndTextField extends JFrame{
 
 	private JLabel lbl = new JLabel("Bitte Namen eingeben: ");

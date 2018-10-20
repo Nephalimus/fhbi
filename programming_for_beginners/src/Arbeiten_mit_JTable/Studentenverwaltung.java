@@ -37,6 +37,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.regex.PatternSyntaxException;
 
+@SuppressWarnings("all")
 public class Studentenverwaltung extends JFrame {
 
 	/*

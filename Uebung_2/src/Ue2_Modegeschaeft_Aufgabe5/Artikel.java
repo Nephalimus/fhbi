@@ -2,6 +2,8 @@ package Ue2_Modegeschaeft_Aufgabe5;
 
 import java.util.List;
 
+
+@SuppressWarnings("all")
 /**
  * Text Artikel
  * @author Oliver

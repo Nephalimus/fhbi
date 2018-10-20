@@ -15,6 +15,8 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
+@SuppressWarnings("all")
+
 public class ErfasseDatenDialog extends JDialog implements ActionListener{
 	
 	private JPanel pnlLabel;

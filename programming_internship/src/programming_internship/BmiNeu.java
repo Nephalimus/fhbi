@@ -18,6 +18,7 @@ import javax.swing.SwingConstants;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
+@SuppressWarnings("all")
 
 public class BmiNeu extends JFrame{
 	

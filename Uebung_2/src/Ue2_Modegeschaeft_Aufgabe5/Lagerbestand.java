@@ -2,6 +2,7 @@ package Ue2_Modegeschaeft_Aufgabe5;
 
 import java.util.Date;
 
+@SuppressWarnings("all")
 /**
  * Text Lagerbestand
  * @author Oliver

@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+@SuppressWarnings("all")
 public class Artikeltest {
 
 	public static void main(String[] args) {

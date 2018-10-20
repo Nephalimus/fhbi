@@ -23,6 +23,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
+@SuppressWarnings("all")
 public class MyJTableView extends JFrame implements ActionListener{
 
 	private StudentTableModel tableModel;

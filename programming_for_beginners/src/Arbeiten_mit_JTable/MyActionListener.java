@@ -7,6 +7,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@SuppressWarnings("all")
 public class MyActionListener implements ActionListener{
 	
 	private SimpleDateFormat df = new SimpleDateFormat("dd.MM.yyyy");

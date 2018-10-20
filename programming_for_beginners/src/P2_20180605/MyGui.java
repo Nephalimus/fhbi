@@ -13,6 +13,7 @@ import java.awt.event.WindowListener;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 
+@SuppressWarnings("all")
 public class MyGui extends JFrame {
 
 	private JPanel contentPane;

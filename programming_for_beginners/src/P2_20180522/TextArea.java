@@ -6,6 +6,7 @@ import java.awt.Dimension;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
 
+@SuppressWarnings("all")
 public class TextArea extends JFrame{
 	private JTextArea ta = new JTextArea();
 
