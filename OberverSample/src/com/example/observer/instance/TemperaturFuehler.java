@@ -1,5 +1,6 @@
 package com.example.observer.instance;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.example.observer.Beobachter;
@@ -7,8 +8,8 @@ import com.example.observer.Subjekt;
 
 public class TemperaturFuehler implements Subjekt {
 	private int temperature;
-	private List<Beobachter> anzeige;
-	
+	private List<Beobachter> anzeige = new ArrayList<Beobachter>();
+		
 	@Override
 	public void registriereBeobachter(Beobachter b) {
 		// TODO Auto-generated method stub
@@ -32,8 +33,10 @@ public class TemperaturFuehler implements Subjekt {
 		temperature++;	
 		
 		// Rufe nun alle Beobachter auf, hier ist es nur eine Anzeige
-		
-		//anzeige.stream().forEach(::aktualisieren);	
+		for(int i=0;i<anzeige.size();i++) {
+			Beobachter s1 = anzeige.get(i);
+			s1.aktualisieren(this);
+		}
 	}
 
 }

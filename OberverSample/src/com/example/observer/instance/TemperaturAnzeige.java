@@ -22,6 +22,9 @@ public class TemperaturAnzeige implements Beobachter {
 		mainWindow.add(tempValue);
 		mainWindow.pack();
 		mainWindow.setVisible(true);
+		
+		mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		mainWindow.setLocation(100, 100);
 	} 
 	
 	@Override

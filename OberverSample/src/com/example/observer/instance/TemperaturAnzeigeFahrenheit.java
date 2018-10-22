@@ -19,6 +19,10 @@ public class TemperaturAnzeigeFahrenheit implements Beobachter {
 		mainWindow.add(tempLabel);
 		mainWindow.add(tempValue);
 		mainWindow.pack();
+		
+		mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		mainWindow.setLocation(200, 200);
+		
 		mainWindow.setVisible(true);
 	} 
 	
