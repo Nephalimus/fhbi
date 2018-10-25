@@ -14,9 +14,13 @@ public class CSVLeserAdapter implements IPersonenLeser {
 	
 	@Override
 	public Vector<Person> lesePersonen() {
-		importCSV.lesePersonenDatei(file);
-		
 		Vector<Person> personen = new Vector<Person>();
+		Vector<String []> importPersonen = importCSV.lesePersonenDatei(file);
+		
+		for (String[] stringPerson : importPersonen){
+			personen.add(new Person(stringPerson[0],stringPerson[1]));
+		}
+
 		//hier von Vektor String auf Vektor Person umwandeln
 		return new Vector<Person>();
 		
