@@ -37,6 +37,10 @@ public class TemperaturFuehler implements Subjekt {
 			Beobachter s1 = anzeige.get(i);
 			s1.aktualisieren(this);
 		}
+		
+		/*oder for(Beobachter s1:anzeige){
+			s1.aktualisieren(this);
+		}*/
 	}
 
 }

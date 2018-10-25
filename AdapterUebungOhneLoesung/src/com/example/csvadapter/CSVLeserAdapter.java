@@ -22,8 +22,7 @@ public class CSVLeserAdapter implements IPersonenLeser {
 		}
 
 		//hier von Vektor String auf Vektor Person umwandeln
-		return new Vector<Person>();
-		
+		//return new Vector<Person>();
+		return personen;
 	}
-
 }
