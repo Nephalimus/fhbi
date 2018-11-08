@@ -21,7 +21,7 @@ public class Log {
 	
 	
 	public Log() {
-		try {
+		try { 
 			
 			
 			Session session = NotesFactory.createSession();
